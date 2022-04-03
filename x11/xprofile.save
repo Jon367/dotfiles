@@ -1,0 +1,13 @@
+setxkbmap us -variant colemak &
+slstatus &
+dunst &
+#dwmstatus 2>&1 >/dev/null &
+xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 &
+redshift -l 40.230574:-111.649772 -t 6500:3000 &
+# Uncomment and edit to set the wallpaper.
+# Hides the mouse cursor after 3 seconds of inactivity
+unclutter -idle 2 &
+xrdb .Xresources &
+slock &
+nitrogen --restore &
+batsignal &
