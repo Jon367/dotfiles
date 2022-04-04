@@ -7,3 +7,5 @@ if status is-login
         exec startx -- -keeptty
     end
 end
+
+alias backlight backlight_control
