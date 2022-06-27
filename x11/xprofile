@@ -1,14 +1,19 @@
 setxkbmap us -variant colemak &
 slstatus &
 dunst &
-redshift -l 12.137752:15.054325 -t 4500:3000 &
+#dwmstatus 2>&1 >/dev/null &
+picom &
+redshift -l 40.230574:-111.649772 -t 6500:3000 &
 # Uncomment and edit to set the wallpaper.
+xautolock -time 10 -locker slock && gpg-connect-agent --no-autostart reloadagent /bye &
 # Hides the mouse cursor after 3 seconds of inactivity
 unclutter -idle 2 &
 xrdb .Xresources &
-nitrogen --restore &
-batsignal &
-xss-lock slock &
-lxsession &
-dunst &
-activitywatcher &
+#xrandr -s 1920x1080 &
+xrandr --output DP-4 --primary --right-of DVI-D-0
+pipewire &
+pipewire-pulse &
+pipewire-media-session &
+syncthing &
+#flowy --solar ~/Downloads/wallpapers 40.233832 -111.652374 &
+nitrogen --restore
